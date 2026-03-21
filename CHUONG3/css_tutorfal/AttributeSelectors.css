@@ -1,0 +1,6 @@
+a[target] {
+  background-color: yellow;
+}
+[class^="top"] {
+  background: yellow;
+}

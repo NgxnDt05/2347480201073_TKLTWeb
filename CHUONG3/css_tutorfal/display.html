@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <p class="flip" onclick="myFunction()">Click to show panel</p>
+
+<div id="panel">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>We use JavaScript to show it (display: block).</p>
+  <p>How it works: When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<span class="p">A display property with</span> <span class="p">a value of "block" results in</span> <span class="p">a line break between each span elements.</span>
+<a href="/html/default.asp" target="_blank">HTML</a>
+<a href="/css/default.asp" target="_blank">CSS</a>
+<a href="/js/default.asp" target="_blank">JavaScript</a>
+<p class="ex1">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+
+<h2>display: inline:</h2>
+<p class="ex2">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+
+<h2>display: block:</h2>
+<p class="ex3">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+
+<h2>display: inline-block:</h2>
+<p class="ex4">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+
+<h2>display: flex:</h2>
+<p class="ex5">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+
+<h2>display: grid:</h2>
+<p class="ex6">
+  <span class="h">Text 1</span>
+  <span class="h">Text 2</span>
+  <span class="h">Text 3</span>
+</p>
+<h2>Difference between display:none and visiblity: hidden</h2>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="anh.jpg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="paper.jpg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="paper.jpg" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+<h1 class="t">This is a hidden heading</h1>
+<h1 class="g">This is a hidden heading</h1>
+</body>
+</html>

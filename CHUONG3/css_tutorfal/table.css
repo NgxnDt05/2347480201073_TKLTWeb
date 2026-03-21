@@ -1,0 +1,34 @@
+/* Thiết lập chung cho bảng */
+        table {
+            border-collapse: collapse; /* Gộp 2 viền thành 1 */
+            width: 100%;
+            border: 3px solid green; /* Viền ngoài cùng màu xanh */
+        }
+
+        /* Thiết lập cho từng ô */
+        th, td {
+            border: 3px solid green; /* Viền các ô bên trong */
+            padding: 10px;
+        }
+
+        /* Thiết lập riêng cho tiêu đề (Header) */
+        th {
+            height: 70px;
+            text-align: left;
+            background-color: lightgray; /* Thêm màu nền cho dễ nhìn tiêu đề */
+        }
+
+        /* Thiết lập riêng cho ô dữ liệu (Data) */
+        td {
+            text-align: center;
+            height: 50px;
+            vertical-align: bottom; /* Chữ nằm dưới đáy ô */
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        /* Hiệu ứng khi di chuột vào dòng */
+        tr:hover {
+            background-color: coral;
+        }
+        div.tablecontainer {
+  overflow-x: auto;/*tự động xuống dòng khi chàng khung*/
+}

@@ -1,0 +1,44 @@
+body {
+    /*background-color: lightblue;*/
+    /*background-image: url("anh.jpg");*/
+    background: #ffffff url("anh.jpg") no-repeat right top;
+    /*background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: right top;*/
+    margin-right: 200px;
+    background-attachment: scroll;
+    }
+    h1 {
+    background-color: blue;
+    }
+
+    div {
+    background-color: lightblue;
+    }
+
+    p {
+    background-color: yellow;
+    background-image: url("paper.jpg");
+    }
+/*    div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+*/
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}

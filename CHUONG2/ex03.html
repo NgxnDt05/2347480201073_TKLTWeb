@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2.3 - Thông báo tuyển sinh</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 15px; 
+            line-height: 1.5;
+        }
+
+        .container {
+            border: 1px solid #000;
+            padding: 30px;
+            width: 750px;
+            margin: auto;
+        }
+
+        /* Phần đầu trang */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+        
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* Tiêu đề chính: Verdana, đậm, đỏ */
+        h1 {
+            color: red;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Nội dung danh sách */
+        .list-nganh {
+            margin-left: 80px; /* Tăng lề trái để căn đối hơn */
+        }
+
+        .list-nganh ol {
+            font-weight: bold; /* In đậm tên ngành (1, 2, 3...) */
+        }
+
+        .list-nganh ol li {
+            margin-bottom: 10px;
+        }
+
+        .list-nganh ul {
+            font-weight: normal; /* Nội dung chi tiết in thường */
+            list-style-type: disc;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Hình ảnh chân trang */
+        .image-footer {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Căn giữa toàn bộ cụm ảnh */
+            gap: 30px;
+        }
+
+        .logo-blu {
+            width: 200px;
+            height: auto;
+        }
+
+        .site-images {
+            display: flex;
+            gap: 15px;
+        }
+
+        .site-images img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-top">
+        <div style="text-align: center;">
+            <b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b><br>
+            KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+        </div>
+        <div style="text-align: center;">
+            <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b><br>
+            Độc lập - Tự do - Hạnh phúc
+        </div>
+    </div>
+
+    <h1>THÔNG BÁO TUYỂN SINH</h1>
+    <p class="sub-title"><b>(Hệ đại học không chính quy)</b></p>
+
+    <div class="list-nganh">
+        <ol>
+            <li>Tài chính tín dụng</li>
+            <li>Quản lý đất đai</li>
+            <li>Công nghệ thực phẩm</li>
+            <li>Văn hóa du lịch
+            <p>Môn thi</p>
+                <ul>
+                    <li>Môn thi: Văn, Sử, Địa</li>
+                    <li>Ngày thi: 19/12/2008</li>
+                    <li>Ôn tập văn hóa: 13/11/2008</li>
+                </ul>
+            </li>
+            <li>Công tác xã hội</li>
+            <li>Báo chí
+                <ul>
+                    <li>Môn thi: Văn, Sử, Địa</li>
+                    <li>Ngày thi: 20/12/2008</li>
+                    <li>Ôn tập văn hóa: 14/11/2008</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="image-footer">
+        <img src="logo_blu.jpg" alt="Logo Đại học Bạc Liêu" class="logo-blu">
+        <div class="site-images">
+            <img src="Gioithieu.jpg" alt="Cơ sở trường 1">
+            <img src="bl.jpg" alt="Cơ sở trường 2">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

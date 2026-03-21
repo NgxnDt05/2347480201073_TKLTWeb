@@ -1,0 +1,34 @@
+img.r {
+  float: right;
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;  
+}
+img.l {
+  float: left;
+  margin-right: 15px;
+  width: 200px;
+  height: 200px;  
+  margin-bottom: 50px;
+}
+img {
+  float: none;
+  width: 200px;
+  height: 200px;  
+}
+div {
+  float: left;
+  padding: 15px; 
+}
+
+.div1 {
+  background: red;
+}
+
+.div2 {
+  background: yellow;
+}
+
+.div3 {
+  background: green;
+}

@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+}
+
+/* Kẻ viền và căn lề */
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mặc định*/
+th {
+    font-weight: normal;
+}
+
+/* 1. Tô màu và IN ĐẬM dòng đầu tiên (Thứ/Buổi -> CN) */
+tr:first-child th {
+    background-color: #4CAF50; /* Màu nền tiêu đề */
+    font-weight: bold;
+}
+
+/* 2. IN ĐẬM cột đầu tiên (Sáng, Chiều) */
+tr th:first-child {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* 3. Tô màu cột Chủ Nhật giống dòng tiêu đề */
+tr th:last-child {
+    background-color: #4CAF50;
+}
+
+/* 4. Đảm bảo ô góc (Thứ/Buổi) vẫn in đậm và có màu nền tiêu đề */
+tr:first-child th:first-child {
+    background-color: #4CAF50;
+    font-weight: bold;
+}

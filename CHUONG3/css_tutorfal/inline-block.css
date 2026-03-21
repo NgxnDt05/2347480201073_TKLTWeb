@@ -1,0 +1,33 @@
+span.a {
+  display: inline; /* the default for span */
+  padding: 5px;
+  border: 2px solid red;  
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid red;    
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid red;    
+}
+.nav {
+  background-color: lightgray; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px;
+}

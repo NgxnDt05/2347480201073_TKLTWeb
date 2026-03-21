@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Pseudo-element.css">
+</head>
+<body>
+    <h2>Using ::first-line</h2>
+
+<p class="q">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<h2>Using ::first-letter</h2>
+
+<p class="w">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+<h3 class="p">This is a heading</h3>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+<h3 class="o">This is a heading</h3>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+<p>Select some text on this page.</p>
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+<p>Click the button to show a dialog box:</p>
+
+<button id="dialogBtn">Show dialog</button>
+
+<dialog id="myDialog">
+  <form method="dialog">
+    <p>The background behind this dialog, is a backdrop.</p>
+    <button>Close dialog</button>
+  </form>
+</dialog>
+
+<script>
+const dialogBtn = document.getElementById('dialogBtn');
+const myDialog = document.getElementById('myDialog');
+dialogBtn.addEventListener('click', () => myDialog.showModal());
+</script>
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+<h2>Use multiple pseudo-elements</h2>
+
+<p class="e">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+</body>
+</html>

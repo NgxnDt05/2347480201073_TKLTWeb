@@ -1,0 +1,60 @@
+p.q::first-line {
+  color: red;
+  font-variant: small-caps;
+  font-size: 19px;  
+}
+p.w::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+h3.p::before {
+  content: ""; /* Phải có content rỗng */
+  display: inline-block;
+  width: 20px;  /* Chỉnh chiều rộng hình ảnh tại đây */
+  height: 20px; /* Chỉnh chiều cao hình ảnh tại đây */
+  background-image: url('cuoi.jpg');
+  background-size: contain; /* Đảm bảo hình thu nhỏ không bị cắt mất */
+  background-repeat: no-repeat;
+  margin-right: 10px; /* Khoảng cách giữa hình và chữ */
+  vertical-align: middle; /* Căn giữa hình theo dòng chữ */
+}
+h3.o::after {
+  content: ""; /* Phải có content rỗng */
+  display: inline-block;
+  width: 20px;  /* Chỉnh chiều rộng hình ảnh tại đây */
+  height: 20px; /* Chỉnh chiều cao hình ảnh tại đây */
+  background-image: url('cuoi.jpg');
+  background-size: contain; /* Đảm bảo hình thu nhỏ không bị cắt mất */
+  background-repeat: no-repeat;
+  margin-right: 10px; /* Khoảng cách giữa hình và chữ */
+  vertical-align: middle; /* Căn giữa hình theo dòng chữ */
+}
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+button {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+dialog::backdrop {
+  background-color: lightgreen;
+}
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}  
+p.e::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+
+p.e::first-line {
+  color: blue;
+  font-variant: small-caps;
+}

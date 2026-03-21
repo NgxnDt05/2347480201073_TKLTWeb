@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu đăng ký dự thi thể thao</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .banner {
+            background-color: #C0C0C0;
+            padding: 10px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family: Verdana, sans-serif;
+            color: Red;
+            text-align: center;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .form-table th, .form-table td {
+            border: 1px solid #000;
+            padding: 15px;
+        }
+        .section-title {
+            background-color: #C0C0C0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .button-group {
+            margin-top: 15px;
+        }
+        /* Styling the inner layout without nested tables where possible */
+        .flex-row {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="banner">Đăng ký thể thao</div>
+
+        <div class="header-top">
+            <div style="text-align: center;">
+                <strong>TRƯỜNG ĐẠI HỌC BẠC LIÊU</strong><br>
+                KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+            </div>
+            <div style="text-align: center;">
+                <strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong><br>
+                Độc lập - Tự do - Hạnh phúc
+            </div>
+        </div>
+
+        <h1>PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO</h1>
+
+        <form action="/submit-form" method="POST">
+            <table class="form-table">
+                <tr>
+                    <td width="30%" align="center">
+                        <img src="logo_blu.jpg" width="120" alt="Logo BLU">
+                    </td>
+                    <td width="70%">
+                        <p><label>Họ tên: </label><input type="text" name="fullname" size="25"></p>
+                        <p><label>Mật khẩu: </label><input type="password" name="pwd" size="25"></p>
+                        <p>
+                            <strong>Môn thể thao:</strong><br>
+                            <label><input type="checkbox" name="sport" value="soccer"> Bóng đá</label><br>
+                            <label><input type="checkbox" name="sport" value="volleyball"> Bóng chuyền</label><br>
+                            <label><input type="checkbox" name="sport" value="track"> Điền kinh</label><br>
+                            <label><input type="checkbox" name="sport" value="swimming"> Bơi lội</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="section-title">
+                    <td colspan="2">PHẦN CỨNG MÁY TÍNH</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="flex-row">
+                            <div>
+                                <strong>Thiết bị:</strong><br>
+                                <select name="hardware" size="4" style="width: 150px;">
+                                    <option value="cpu">CPU</option>
+                                    <option value="mainboard">Mainboard</option>
+                                    <option value="dvd">ASUS DVD</option>
+                                    <option value="ram">RAM KingMax</option>
+                                    <option value="ramlau">RAM Lậu</option>
+                                </select>
+                            </div>
+                            <div>
+                                <strong>Thời gian bảo hành:</strong><br>
+                                <select name="warranty">
+                                    <option>1 năm</option>
+                                    <option>2 năm</option>
+                                    <option>3 năm</option>
+                                </select>
+                                <div class="button-group">
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

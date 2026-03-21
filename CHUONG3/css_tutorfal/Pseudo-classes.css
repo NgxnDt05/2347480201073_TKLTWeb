@@ -1,0 +1,56 @@
+a.l:link {
+  color: red;
+}
+
+/* visited link */
+a.l:visited {
+  color: green;
+}
+
+/* mouse over link */
+a.l:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a.l:active {
+  color: blue;
+}
+div.o {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div.o:hover {
+  background-color: blue;
+}
+input:focus {
+  background-color: yellow;
+}
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+p.q {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div.q:hover p.q {
+  display: block;
+}
+p.i:first-child {
+  color: blue;
+} 
+p.r em:first-child {
+  color: blue;
+} 
+p.v:first-child em {
+  color: blue;
+} 
+q:lang(no) {
+  quotes: "~" "~";
+}

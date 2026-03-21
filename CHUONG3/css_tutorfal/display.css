@@ -1,0 +1,63 @@
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor:pointer;
+}
+a {
+  display: block;
+}
+#panel {
+  display: none;
+  cursor: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+p {
+  background-color: blue;
+  padding: 10px;
+}
+span.p{
+      display: block;
+}
+span.h {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+p.ex5 {display: flex;}
+p.ex6 {display: grid;}
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 120px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+}
+h1.t {
+  display: none;/*dừng sử dụng h1*/
+}
+h1.g {
+  visibility: hidden;/*dừng sử dụng h1 vẫn dữ khoảng trắng*/
+}

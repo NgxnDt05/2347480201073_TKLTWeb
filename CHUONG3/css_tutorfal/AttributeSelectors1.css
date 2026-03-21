@@ -1,0 +1,9 @@
+a[target=_blank] {
+  background-color: yellow;
+}
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+[class|=top] {
+  background: yellow;
+}

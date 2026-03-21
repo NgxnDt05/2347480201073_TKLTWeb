@@ -1,0 +1,84 @@
+ul.f {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+ul.o {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.o a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+li.o a:hover {
+  background-color: #555555;
+  color: white;
+}
+ul.g {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.g a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.g a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li.g a:hover:not(.active) {
+  background-color: #555555;
+  color: white;
+}
+ul.u {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555555;
+}
+
+li.u a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.u {
+  text-align: center;
+  border-bottom: 1px solid #555555;
+}
+
+li.u:last-child {
+  border-bottom: none;
+}
+
+li.u a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li.u a:hover:not(.active) {
+  background-color: #555555;
+  color: white;
+}

@@ -1,0 +1,12 @@
+div.l p {
+  background-color: yellow;
+}
+div.k > p {
+  background-color: yellow;
+}
+div.o + p {
+  background-color: yellow;
+}
+div.t ~ p {
+  background-color: yellow;
+}

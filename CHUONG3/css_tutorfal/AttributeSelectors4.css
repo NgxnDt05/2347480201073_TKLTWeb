@@ -1,0 +1,12 @@
+input[type="text"] {
+  width: 150px;
+  padding: 6px;
+  margin-bottom: 10px;
+  background-color: pink;
+}
+
+input[type="button"] {
+  width: 100px;
+  padding: 6px;
+  background-color: lightgreen;
+}

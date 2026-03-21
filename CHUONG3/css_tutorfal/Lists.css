@@ -1,0 +1,45 @@
+ol {
+  background: salmon;
+  padding: 20px;
+}
+
+ol li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+ul {
+  background: powderblue;
+  padding: 20px;
+}
+
+ul li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+ul.j {
+  list-style-image: url('paper.jpg');
+  list-style-type: square;  
+}
+ol.d {list-style-type: upper-roman;}
+ol.e {list-style-type: lower-roman;}
+ol.f {list-style-type: lower-alpha;}
+ol.g {list-style-type: decimal;}
+ul.p {
+  list-style-position: outside;
+}
+
+ul.l {
+  list-style-position: inside;
+}
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
