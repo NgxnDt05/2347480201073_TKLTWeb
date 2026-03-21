@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký</title>
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+width:400px;
+border:1px solid #ccc;
+padding:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#007bff;
+color:white;
+border:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1 align="center">ĐĂNG KÝ</h1>
+<hr>
+
+<form action="BaiTap21a.php" method="POST">
+
+Username
+<input type="text" name="username" required>
+
+Email
+<input type="email" name="email" required>
+
+Password
+<input type="password" name="password" required>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang đăng nhập</title>
+
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-container{
+    width:400px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+    color:#007bff;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>TRANG ĐĂNG NHẬP</h1>
+<hr>
+
+<form action="BaiTap21.php" method="POST">
+
+Username
+<input type="text" name="username" required>
+
+Email
+<input type="email" name="email" required>
+
+Password
+<input type="password" id="password" name="password" required>
+
+<input type="checkbox" onclick="showPassword()"> Hiển thị mật khẩu
+<br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p align="center">Chưa có tài khoản?</p>
+
+<a href="BaiTap21a.html">
+<button>Đăng ký</button>
+</a>
+
+</div>
+
+<script>
+function showPassword(){
+var x=document.getElementById("password");
+
+if(x.type==="password")
+x.type="text";
+else
+x.type="password";
+}
+</script>
+
+</body>
+</html>
