@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập Hóa Đơn - Quản Lý Bán Hàng</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 400px; }
+        h2 { text-align: center; color: #333; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Thêm Hóa Đơn Mới</h2>
+        <form action="InsertHoaDon.php" method="POST">
+            <div class="form-group">
+                <label>Mã hóa đơn (mahd):</label>
+                <input type="text" name="mahd" placeholder="Ví dụ: 007" required>
+            </div>
+            <div class="form-group">
+                <label>Mã khách hàng (makh):</label>
+                <input type="text" name="makh" placeholder="Ví dụ: K001" required>
+            </div>
+            <div class="form-group">
+                <label>Mã hàng hóa (mahang):</label>
+                <input type="text" name="mahang" placeholder="Ví dụ: AS01" required>
+            </div>
+            <div class="form-group">
+                <label>Số lượng:</label>
+                <input type="number" name="soluong" min="1" required>
+            </div>
+            <button type="submit">Lưu Hóa Đơn</button>
+        </form>
+    </div>
+</body>
+</html>
