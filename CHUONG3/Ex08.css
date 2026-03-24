@@ -1,0 +1,107 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Màu nền nhẹ để menu nổi bật */
+        }
+
+        /* --- CẤU TRÚC MENU CHÍNH --- */
+        .menu {
+            display: flex; /* Dùng Flexbox thay cho float */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            /* Box-shadow giúp menu nổi lên */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+        }
+
+        .menu > li {
+            position: relative; /* Giữ nguyên quan trọng */
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s; /* Hiệu ứng chuyển màu mượt */
+        }
+
+        .menu a:hover {
+            background: #111;
+        }
+
+        /* --- SUBMENU CẤP 2 --- */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%; /* Đẩy xuống dưới đáy của li cha */
+            left: 0;
+            background: #444;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 220px;
+            z-index: 1000; /* Đảm bảo menu luôn nằm trên cùng */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        /* Hiện submenu khi hover */
+        .dropdown:hover > .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            position: relative; /* Để làm điểm tựa cho menu cấp 3 */
+            border-bottom: 1px solid #555; /* Đường kẻ ngăn cách nhẹ */
+        }
+        
+        .submenu li:last-child {
+            border-bottom: none;
+        }
+
+        .submenu li a {
+            padding: 12px 15px;
+        }
+
+        .submenu li a:hover {
+            background: #222;
+        }
+
+        /* --- SUBMENU CẤP 3 (BÊN PHẢI) --- */
+        .submenu-right {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Đẩy sang bên phải */
+            background: #555;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 230px;
+            z-index: 1000;
+            box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+        }
+
+        /* Hiện menu cấp 3 khi hover */
+        .dropdown-right:hover > .submenu-right {
+            display: block;
+        }
+
+        /* --- TẠO MŨI TÊN BẰNG CSS (KHÔNG CẦN GÕ TRONG HTML) --- */
+        
+        /* Mũi tên đi xuống cho menu cấp 1 */
+        .dropdown > a::after {
+            content: " ▼"; 
+            font-size: 0.6em; 
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* Mũi tên sang phải cho menu cấp 2 */
+        .dropdown-right > a::after {
+            content: " ▶";
+            font-size: 0.6em;
+            float: right; /* Đẩy mũi tên sang mép phải */
+            margin-top: 4px;
+        }
